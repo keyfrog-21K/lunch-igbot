@@ -28,8 +28,6 @@ def meal_loader():
         'SD_SCHUL_CODE': school_code,
         'MLSV_YMD': today  # YYYYMMDD 형식으로 작성할 것.
     }
-
-    # thanks for hminkoo10(https://github.com/hminkoo10/solvit_lunch/blob/main/main.py line#102)
     response = requests.get(api_url, params=params, json=True)
     response.encoding = 'UTF-8'
     data = response.json()
