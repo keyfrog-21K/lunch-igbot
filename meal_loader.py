@@ -31,4 +31,7 @@ def meal_loader():
     response = requests.get(api_url, params=params, json=True)
     response.encoding = 'UTF-8'
     data = response.json()
-    return data["mealServiceDietInfo"][1]["row"][0]["DDISH_NM"].replace("<br/>", "\n")
+    try:
+        return data["mealServiceDietInfo"][1]["row"][0]["DDISH_NM"].replace("<br/>", "\n")
+    except:
+        return ' 급식 정보가 없습니다. \n 주말, 공휴일, 방학인지 확인해주세요.'

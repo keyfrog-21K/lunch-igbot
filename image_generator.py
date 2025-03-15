@@ -3,8 +3,6 @@
 
 from PIL import Image, ImageDraw, ImageFont
 
-# thanks for hminkoo10(https://github.com/hminkoo10/solvit_lunch)
-
 def create_image_with_template(text, date):
     # 날짜 정보 포맷팅
 
@@ -15,7 +13,7 @@ def create_image_with_template(text, date):
     text_color = (0, 0, 0)
     title_color = (0, 0, 0)
     font_path = "./WantedSans-SemiBold.ttf"  # 한글 폰트 경로를 설정하세요
-    font_size = 100  # 본문 크기를 15% 증가
+    font_size = 80  # 본문 크기를 15% 증가
     title_font_size = 75  # 제목 폰트 크기 감소
     background = './background.png'
 
@@ -51,4 +49,4 @@ def create_image_with_template(text, date):
 
 
     # 이미지 저장 (PNG 형식)
-    image.save(f'./{date}.png', format='PNG')
+    image.save(f'./summary.jpeg', format='JPEG')
