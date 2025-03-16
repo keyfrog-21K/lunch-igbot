@@ -45,7 +45,7 @@ def process():
     print('이미지를 생성합니다.')
     create_image_with_template(today_meal, today)
     print('이미지 생성이 완료되었습니다.')
-    # instagram_upload(today)
+    instagram_upload(today)
     os.remove('summary.jpeg')
     print('업로드가 완료되었기 때문에 파일을 삭제합니다.')
 
