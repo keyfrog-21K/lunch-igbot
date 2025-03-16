@@ -20,3 +20,8 @@ L WantedSans-SemiBold.ttf: image_generator.py를 위한 폰트 파일입니다. 
 2. 급식 정보를 불러옵니다. 
 3. 불러온 정보를 기반으로 이미지 파일을 만듭니다.
 4. 만들어진 이미지 파일을 인스타그램에 업로드합니다.
+
+# 개발 환경
+- Apple macOS Sequoia 15.3 (Intel)
+- Python 3.13 with venv
+- PyCharm Professional 2024.1.2
