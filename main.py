@@ -49,8 +49,6 @@ def process():
     os.remove('summary.jpeg')
     print('업로드가 완료되었기 때문에 파일을 삭제합니다.')
 
-process()
-
 # 자동 실행 코드
 schedule.every().day.at("07:30").do(process)
 
