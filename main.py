@@ -37,6 +37,7 @@ def instagram_upload(today):
 # 메인 프로세스
 def process():
     today = datetime.date.today().strftime('%m월 %d일')
+    print(datetime.now())
     print('메인 프로세스를 시작합니다.')
     print('급식 정보를 불러옵니다.')
     today_meal = meal_loader()
@@ -57,4 +58,4 @@ while True:
         schedule.run_pending()
     except:
         pass
-    time.sleep(60)
+    time.sleep(1)
